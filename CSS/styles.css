@@ -1,0 +1,139 @@
+/******************Classes - Selectors - Begin ******************/
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.heading-2 {
+  width: 20.5%;
+  height: 190px;
+  text-align: left;
+  border-top: solid 6px #45D3D3;
+  border-radius: 5px;
+  padding-top: 10px;
+  border-bottom: inset;
+  background-color: white;
+  position: relative;
+  left:240px;
+  top:150px;
+}
+
+.supervisor {
+  float: right;
+  margin-right: 22px;
+  padding-top:20px;
+}
+
+.heading-3 {
+  width: 20.5%;
+  height: 190px;
+  text-align: left;
+  border-top: solid 6px hsl(0, 78%, 62%);
+  border-radius: 5px;
+  padding-top: 10px;
+  position: relative;
+  left: 530px;
+  bottom: 160px;
+  border-bottom: inset;
+  background-color: white;
+}
+
+.team-builder {
+  float: right;
+  margin-right: 22px;
+  padding-top:20px;
+}
+
+.heading-4 {
+  width: 20.5%;
+  height: 190px;
+  text-align: left;
+  border-top: solid 6px hsl(34, 97%, 64%);
+  border-radius: 5px;
+  padding-top: 10px;
+  border-bottom: inset;
+  background-color: white;
+  position: relative;
+  left: 530px;
+  bottom:143px;
+}
+
+.karma {
+  float: right;
+  margin-right: 22px;
+  padding-top:20px;
+}
+
+.heading-5 {
+  width: 20.5%;
+  height: 190px;
+  text-align: left;
+  border-top: solid 6px hsl(212, 86%, 64%);
+  border-radius: 5px;
+  padding-top: 10px;
+  border-bottom: inset;
+  background-color: white;
+  position: relative;
+  left: 820px;
+  bottom: 418px;
+}
+
+.calculator {
+  float: right;
+  margin-right: 22px;
+  padding-top:20px;
+}
+
+/******************Classes - Selectors - End ******************/
+/******************ID - Selectors - Begin ******************/
+#heading-val1-1 {
+  font-weight: 200;
+  color: #323232;
+  line-height: 1.5;
+}
+
+#heading-val1-2 {
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+#heading-val2-1 {
+  padding-top: 25px;
+  font-weight: 400;
+  color: #A3A5AE;
+  font-size: 11px;
+  width: 50%;
+  padding-bottom:40px;
+}
+#heading-val2-2 {
+  font-weight: 400;
+  color: #A3A5AE;
+  font-size: 11px;
+  width: 50%;
+}
+
+
+/******************ID - Selectors - End ******************/
+/******************Tag - Selectors - Begin ******************/
+body {
+  text-align: center;
+  margin-top: 60px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F7F7F7;
+  color: #4C4E61;
+}
+
+p {
+  font-size: 9px;
+  color: #A3A5AE;
+  padding-left: 2px;
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+h6 {
+  font-weight: 600;
+  padding-left: 20px;
+}
+
+/******************Tag - Selectors - End ******************/
