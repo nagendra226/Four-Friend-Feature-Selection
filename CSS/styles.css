@@ -4,86 +4,51 @@
   text-align: center;
 }
 
-.heading-2 {
-  width: 20.5%;
+.heading-2,.heading-3,.heading-4,.heading-5 {
   height: 190px;
   text-align: left;
+  border-radius: 5px;
+  padding-top: 10px;
+  border-bottom: inset;
+  background-color: white;
+}
+
+.heading-2{
   border-top: solid 6px #45D3D3;
-  border-radius: 5px;
-  padding-top: 10px;
-  border-bottom: inset;
-  background-color: white;
-  position: relative;
-  left:240px;
-  top:150px;
+  grid-column: 1;
+  grid-row: 2/4;
 }
 
-.supervisor {
-  float: right;
-  margin-right: 22px;
-  padding-top:20px;
-}
-
-.heading-3 {
-  width: 20.5%;
-  height: 190px;
-  text-align: left;
+.heading-3{
   border-top: solid 6px hsl(0, 78%, 62%);
-  border-radius: 5px;
-  padding-top: 10px;
-  position: relative;
-  left: 530px;
-  bottom: 160px;
-  border-bottom: inset;
-  background-color: white;
+  grid-column: 2;
+  grid-row: 1/3;
 }
 
-.team-builder {
-  float: right;
-  margin-right: 22px;
-  padding-top:20px;
-}
-
-.heading-4 {
-  width: 20.5%;
-  height: 190px;
-  text-align: left;
+.heading-4{
   border-top: solid 6px hsl(34, 97%, 64%);
-  border-radius: 5px;
-  padding-top: 10px;
-  border-bottom: inset;
-  background-color: white;
-  position: relative;
-  left: 530px;
-  bottom:143px;
+  grid-column: 2;
+  grid-row: 3/5;
 }
 
-.karma {
-  float: right;
-  margin-right: 22px;
-  padding-top:20px;
-}
-
-.heading-5 {
-  width: 20.5%;
-  height: 190px;
-  text-align: left;
+.heading-5{
   border-top: solid 6px hsl(212, 86%, 64%);
-  border-radius: 5px;
-  padding-top: 10px;
-  border-bottom: inset;
-  background-color: white;
-  position: relative;
-  left: 820px;
-  bottom: 418px;
+  grid-column: 3;
+  grid-row: 2/4;
 }
 
-.calculator {
+.supervisor,.team-builder,.karma,.calculator {
   float: right;
   margin-right: 22px;
   padding-top:20px;
 }
-
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 22rem);
+  grid-template-rows: repeat(4, auto);
+  grid-gap: 2rem;
+  grid-area:auto;
+}
 /******************Classes - Selectors - End ******************/
 /******************ID - Selectors - Begin ******************/
 #heading-val1-1 {
@@ -137,3 +102,36 @@ h6 {
 }
 
 /******************Tag - Selectors - End ******************/
+/*For Mobile*/
+@media only screen and (max-width: 480px) {
+  body {
+    width: 375px;
+    margin: 1.5rem;
+  }
+  .heading-2 {
+    grid-row: 1;
+    grid-column: 1;
+  }
+
+  .heading-3 {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .heading-4 {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .heading-5 {
+    grid-row: 4;
+    grid-column: 1;
+  }
+  .card {
+    width: 95%;
+    padding-right: 1.25rem;
+  }
+  .container {
+    margin: 1rem;
+  }
+}
